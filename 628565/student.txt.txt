@@ -1,4 +1,0 @@
-student name: Mohamed Mohamedin
-student number: 628565
-student class: 1C
-URL student GitHub repository: github.com/momo-98/Web-markup-assesment
