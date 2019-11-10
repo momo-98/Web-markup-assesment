@@ -1,0 +1,377 @@
+html{
+    font-family: Arial, Helvetica, sans-serif ;
+    scroll-behavior: smooth;
+}
+h1{
+    display: inline;
+    font-family: fantasy,Helvetica, sans-serif; 
+    font-size: 63pt;
+    font-style: italic;   
+    font-weight: 900; 
+    padding: 6px 40px 6px 40px;
+    text-shadow: 2px 1px #ffffff;
+    
+}
+
+h2{
+    font-size: 30pt;
+    padding: 6px 40px 6px 40px; 
+    text-shadow: 2px 1px #ffffff; 
+    
+}     
+p{
+    padding: 6px 40px 6px 40px;
+}    
+
+h3{
+    font-size: 25pt;
+    padding: 6px 40px 6px 40px;
+}
+h4{
+    font-size: 15pt;
+    padding: 6px 40px 6px 40px;
+}
+@media screen and (min-width: 1000px){
+    h1{
+        font-size: 80pt;
+    }
+     h2{
+         float: right ;   
+     }
+     
+}
+body{
+    margin: 0;
+    
+}    
+a{
+    color: #2699fb;
+}                      
+            
+footer{
+    font-family:  Courier, 'Courier New', monospace;
+}
+img{
+    height:260px
+    
+}
+
+video{
+    height:  auto;
+    width: auto;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+                                     /*navigation bar*/
+
+nav{       /* menu nav*/
+    font-size: 20px;
+    margin-left: -10px;
+    margin-right: 0px;                                       
+    margin-bottom:  10px ;
+    position: sticky;
+    top: 0;       
+    z-index: 1;                                                                  
+}
+.dropbtn{
+    visibility: hidden;
+}
+#menu {      /*menu ul*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
+    overflow: hidden;  
+    top: 0;
+   
+}
+#menu li{
+    float: left;
+    padding: 13px 20px 13px 20px;
+    overflow: hidden;
+    text-decoration: none;   
+}
+#structure3{
+margin-left: 40px;
+}
+#menu a{
+    color: #ffffff;
+    text-decoration: none;  
+}
+#menu a:hover {   
+    color: #AAAAAA;
+}
+
+                                 /*hamburger menu*/
+@media screen and (min-width: 700px){
+    .dropdown{
+    visibility: hidden;
+}
+
+}
+@media screen and (max-width: 700px){
+    *{
+        width: auto;
+    }
+    
+    ul{
+        visibility: hidden;
+    }
+    
+      
+      .dropdown {
+        position: fixed;
+        display: block;
+        background-color: #000000;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        border: 2px solid #444444
+      }
+      .ham{
+            width: 35px;
+            height: 5px;
+            background-color: rgb(255, 255, 255);
+            margin: 6px 0;  
+      }
+      .bur{
+        padding:10px 20px 12px 22px ;
+      }
+        
+      .mo{
+        display: none;
+        position: auto;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .mo a {
+        color: black;
+        background: rgb(190, 190, 190);
+        padding: 12px 0px 12px 20px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .mo a:hover {
+        color: rgb(255, 255, 255);  
+        background-color: #000000
+    }
+      
+      .dropdown:hover .mo {
+        display: block;
+      }
+
+}
+
+
+
+
+                                      /* main content */
+
+@media screen and (min-width: 700px){
+.sect{     
+    grid-template-columns:auto ;
+    grid-gap: 10px;
+    padding: 10px;
+    display: grid;
+    padding-top: 57px;
+}
+}
+
+
+.sect > article,header,footer,aside{
+    background-color: #000000;
+    text-align: left;
+    box-shadow: #707070 .5px .5px .5px .5px;
+    color: #ffffff;
+    opacity: 0.8;
+    
+    
+}
+
+
+
+header{
+    grid-column: 1 / 5;
+    grid-row: 1;   
+}
+
+#f1{     /* first <img> */
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+#f2{      /* first <p> */
+
+    grid-column: 2 / 5;
+    grid-row: 2;
+}    
+#f3{      /* second <p> */
+    grid-column: 1 / 4;
+    grid-row: 3;
+}
+#f4{       /*second img*/
+    grid-column: 4 / 5;
+    grid-row: 3;
+}
+#f5{
+    grid-column: 1 / 5;
+    grid-row: 4;
+}
+
+
+                                 /*secondery content*/
+
+#sc1{
+    grid-column: 1/4;   
+    grid-row: 2 / 5; 
+}
+#sc2{
+    grid-column: 4/5 ;  
+    grid-row: 2 ;   
+}
+#sc3{
+    grid-column: 4/5 ;   
+    grid-row: 3;   
+}
+#sc4{
+    grid-column: 4/5;
+    grid-row: 4;
+}                         
+#sc5{
+    grid-column: 1 / 5;
+    grid-row: 5;
+}
+
+                                   /*sport*/
+
+
+#s2{
+    grid-column: 1 / 2;
+}          
+#s2 p,h4{
+    padding-top: 40px;
+}
+
+#s3{
+    grid-column: 2 / 5;
+    background-color: #ffffff;
+    width: 100%;
+    border: 1px solid #444444
+  }
+#s3 th,td{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+tr{
+    width: 50%;
+}
+td{
+    color: black;
+}
+.tp{
+    width: 100px;
+    height: 90px;
+}
+tr:nth-child(even){background-color: #f5f5f5;}
+
+#s3 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }         
+#s4{
+    grid-column: 1 / 5;
+    grid-row: 3;
+}                                   
+                                   /*referalcontent*/
+
+#r1{
+    grid-column: 1/5; 
+    
+}        
+#r2{
+    grid-column: 1 / 4;
+}
+#r3{
+    grid-column: 4 / 5;
+    width: 100%;
+    height: auto;
+}
+#r4{
+    grid-column: 1 / 5;
+    grid-row: 3;
+}                           
+
+                                 /*contactcontent*/
+
+
+#cc3{
+    grid-column: 2/5;
+    padding: 30px 50px 30px 50px;   
+}
+fieldset{
+    padding: 30px 50px 30px 50px; 
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc ;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#mess{
+    padding-bottom: 60px;
+}
+input{
+      opacity: 1;
+}
+button[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 14px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    text-shadow: 1px 1px black;
+    
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+                                     /*footer*/
+#fo1{
+    padding: 1px 0 1px 0;
+}                               
+
+
+                                     /*cookies*/
+
+#cookie{
+    background-color:hsl(148, 100%, 53%) ;
+    height: 38px;
+    position: sticky;
+    z-index: 2;
+    bottom: 0;
+    width: auto;
+    size: 5pt;
+    border: 1px solid #466e40;
+    display: grid;
+  
+}            
+#coo{
+    padding: 10px 10px 10px 10px;
+}     
